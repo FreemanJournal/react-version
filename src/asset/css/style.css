@@ -1,0 +1,192 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+a:hover {
+    color: inherit;
+}
+a:focus {
+    color: inherit;
+}
+html {
+    height: 100%;
+    overflow: auto;
+    font-size: 90%;
+    scroll-behavior: smooth;
+    @apply font-tajawal;
+}
+body {
+    height: 100%;
+}
+.row {
+    max-width: 75rem;
+    margin: 0 auto;
+}
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+    height: 0;
+    visibility: hidden;
+}
+h2::after {
+    content: "";
+    display: block;
+    width: 8.5rem;
+    height: 0.3rem;
+    background: #f0f8ff;
+    margin: 2rem auto;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+}
+.contact h2::after {
+    content: "";
+    display: none;
+}
+.btn-shadow:hover {
+    box-shadow: inset 0 0.3rem 0.5rem rgba(179, 118, 14, 0.5);
+}
+.nevItem {
+    display: inline-block;
+    margin-left: 2rem;
+}
+.nevItem a {
+    color: #f0f8ff;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.bg {
+    background: -webkit-linear-gradient(rgba(100, 54, 77, 0.7), rgba(212, 154, 183, 0.7)), url(bg-img/hero-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 80vh;
+    padding-top: 10vh;
+    text-align: center;
+    position: relative;
+}
+
+.bg.service {
+    background: -webkit-linear-gradient(rgba(65, 62, 62, 0.9), rgba(59, 59, 60, 0.9)), url(bg-img/services-bg.jpg);
+    min-height: 100vh;
+}
+.bg.service h2::after {
+    @apply bg-gradient-to-r from-white via-pink-500 to-red-500;
+}
+.gradiant_text {
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.bg.team {
+    background: -webkit-linear-gradient(rgba(85, 122, 149, 0.7), rgba(15, 105, 168, 0.7)), url(bg-img/team-bg.jpg);
+    min-height: 100vh;
+}
+.socialLink {
+    display: inline-block;
+    margin: 2rem 0.5rem;
+}
+.social-link li a {
+    position: relative;
+    display: block;
+    color: #f9fcff;
+    font-size: 1.7rem;
+    background: #0487e6;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    padding: 0.3rem;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+.social-link li a:hover {
+    background: #ffff;
+    color: #0487e6;
+    transform: rotate(360deg);
+}
+
+.bg.skill {
+    background: -webkit-linear-gradient(rgba(255, 255, 255, 0.8), rgba(235, 142, 142, 0.8)), url(bg-img/skill-bg.jpg);
+}
+.bg.skill h2::after {
+    background: rgb(252, 89, 89);
+}
+.bg.portfolio {
+    background: -webkit-linear-gradient(rgba(240, 169, 55, 0.9), rgba(243, 227, 10, 0.7)), url(bg-img/portfolio-bg.jpg);
+}
+.bg.product {
+    background: none;
+}
+.bg.portfolio .row {
+    max-width: 90rem;
+}
+.bg.portfolio h2::after {
+    background: #3d3f41;
+}
+.bg.team .row {
+    max-width: 90rem;
+}
+.bg.service .row {
+    max-width: 90rem;
+}
+.bg.portfolio.review {
+    min-height: 60vh;
+}
+.bg.productDetails {
+    padding-top: 8vh;
+}
+.footer h2::after {
+    height: 0.05rem;
+    background: #f0f8ffb0;
+    margin: 1rem auto;
+}
+
+.FQSection h2::after {
+    display: none;
+}
+.contact {
+    padding-top: 10vh;
+}
+.h2 {
+    @apply text-center text-4xl lg:text-5xl uppercase font-bold text-white pt-10;
+}
+.h3 {
+    @apply text-3xl font-thin uppercase text-yellow-50 mt-5 mb-1;
+}
+.p {
+    @apply text-white text-lg w-3/4 md:w-2/4 mx-auto;
+}
+.btn {
+    @apply bg-green-500 hover:bg-green-600  text-2xl font-semibold font-tajawal py-1 px-8 border-0 rounded-lg uppercase text-white hover:text-white my-4 mx-2 cursor-pointer duration-300;
+}
+.topNavBar {
+    @apply fixed w-full  z-50 inset-0 h-20 bg-gray-700 inline-flex items-center px-10 lg:px-0 justify-between lg:justify-around;
+}
+.topNavBarScroll {
+    @apply fixed w-full z-50 inset-0 h-20 bg-gray-700 inline-flex items-center  px-10 lg:px-0 justify-between lg:justify-around;
+}
+.navBarItem {
+    @apply px-4 py-2 hover:bg-gray-500 bg-opacity-50 duration-300 rounded-md;
+}
+.navBarItemScroll {
+    @apply px-4 py-2 hover:bg-gray-900 bg-opacity-50 duration-300 rounded-md;
+}
+.gradiant_color {
+    @apply bg-gradient-to-r from-white via-pink-500 to-red-500;
+}
+.accordion-button:not(.collapsed) {
+    color: #000000;
+}
+
